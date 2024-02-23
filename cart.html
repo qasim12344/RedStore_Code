@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart - RedStore | Ecommerce Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+       <div class="container">
+          <div class="navbar">
+              <div class="logo">
+                  <a href="index.html"><img src="images/logo.png" width="125px"></a>
+              </div>
+              <nav>
+               <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Produkte</a></li>
+                <li><a href="Über_Uns.html">Über Uns</a></li>
+              <!--  <li><a href="">Kontakt</a></li>  -->
+                <li><a href="cart.html">Warenkorb</a></li>
+               </ul>
+              </nav>
+              <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+              <img src="images/menu.png" onclick="menutoggle()" class="menu-icon">
+          </div>
+          
+       </div>
+       
+       
+<!--------------Cart Items --------------->
+<div class="small-container cart-page">
+   
+   <table>
+       <tr>
+           <th>ProduKt</th>
+           <th>Menge</th>
+           <th>Zwischensumme</th>
+           
+           
+       </tr>
+
+       <tr>
+           <td>
+               <div class="cart-info">
+                   <img src="images/buy-1.jpg">
+                   <div>
+                       <p>Rot gedruckt T-Shirt</p>
+                       <small>Price: 50.00€</small><br>
+                       <a href="">Löschen</a>
+                   </div>
+               </div>
+           </td>
+           <td><input type="number" value="1"></td>
+           <td>50.00€</td>
+       </tr>
+       <tr>
+           <td>
+               <div class="cart-info">
+                   <img src="images/buy-2.jpg">
+                   <div>
+                       <p>HRX Sport Schuhe</p>
+                       <small>Price: 75.00€</small><br>
+                       <a href="">Löschen</a>
+                   </div>
+               </div>
+           </td>
+           <td><input type="number" value="1"></td>
+           <td>75.00€</td>
+       </tr>
+       <tr>
+           <td>
+               <div class="cart-info">
+                   <img src="images/buy-3.jpg">
+                   <div>
+                       <p>HRX Grau Trainingshose</p>
+                       <small>Price: 75.00€</small><br>
+                       <a href="">Löschen</a>
+                   </div>
+               </div>
+           </td>
+           <td><input type="number" value="1"></td>
+           <td>75.00€</td>
+       </tr>
+   </table>
+    
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>Zwischensumme</td>
+                <td>162.00€</td>
+            </tr>
+            <tr>
+                <td>Steuer</td>
+                <td>38.00€</td>
+            </tr>
+            <tr>
+                <td>Gesamt</td>
+                <td>$200.00€</td>
+            </tr>
+            
+        </table>
+    </div>
+    <div class="total-price">
+        <a href="#" class="btn">ProKeed Überprüfen &#8594;</a>
+    </div>
+    
+</div>
+
+<!----------Footer---------------> 
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col1">
+               <h3>Herunterladen Die App </h3>
+                <p>Laden Sie die App für Android und iOS Mobiltelefon herunter</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png">
+                    <img src="images/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col2">
+               <img src="images/logo-white.png">
+                <p>Unser Ziel ist es, die Freude und die Vorteile des Sports für die vielen zur Verfügung zu stellen</p>
+            </div>
+            <div class="footer-col3">
+               <h3>Nützliche Links</h3>
+                <ul>
+                    <li>Gutscheine </li>
+                    <li>Blogeintrag </li>
+                    <li>Rücknahmegarantie</li>
+                    <li>Melden Sie sich an</li>
+                </ul>
+            </div>
+            <div class="footer-col4">
+               <h3>Follow Uns</h3>
+                
+                     <a href="https://www.facebook.com"> <img src="images/facebook.png" alt=" ein Klein bild von facebook,das als facebook Symbol ist"></a>
+                    <a href="https://www.twitter.com"> <img src="images/twitter.png" alt="ein Klein bild von twitter,das als twitter Symbol ist"> </a>
+                    <a href="https://www.instagram.com"> <img src="images/instgram.png" alt="ein Klein bild von instgram,das als instgram Symbol ist"></a>
+                       <a href="https://www.YouTube.com"> <img src="images/youtube.png" alt="ein Klein bild von youtube,das als youtube Symbol ist"></a>
+                
+            </div>
+        </div>
+        <hr>
+        <p class="copyright"><a href="https://www.youtube.com/c/EasyTutorialsVideo?sub_confirmation=1">Copyright 2020 - Easy Tutorials</a></p>
+    </div>
+    
+</div>
+
+
+
+
+<!-------------js für menu-------------->
+
+<script src="app.js">
+    /*
+    var MenuItems = document.getElementById("MenuItems");
+    
+    MenuItems.style.maxHeight = "0px";
+    
+    function menutoggle()
+    {
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }else
+            {
+                MenuItems.style.maxHeight = "0px"
+            } 
+    }
+    
+    */
+</script>
+
+
+
+</body>
+</html>
+
